@@ -1,0 +1,219 @@
+ .main-contacts-1 {
+       @media screen and (min-width: 768px) {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     
+    }
+
+    @media screen and (min-width: 1140px) {
+    //  display: flex;
+    //  flex-wrap: wrap;
+     align-items: flex-start;
+     padding-top: 60px;
+     padding-bottom: 60px;
+    }
+}
+  .logo-1 {
+   color: $background-color;
+  font-family: "Raleway", sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+  line-height: 1.19;
+ }
+ .logo-1 span {
+   color: $accent-color;
+}
+.contacts-1 {
+     @media screen and (max-width: 1139px) {
+     display: block;
+     flex-direction: column;
+    }
+   
+     padding-top: 60px;
+      padding-bottom: 60px;
+    
+     font-family: "Roboto";
+     font-weight: 400px;
+     font-size: 14px;
+     line-height: 1, 71;
+
+     background-color: #2F303A;
+ }
+
+
+
+ .contacts-list {
+         @media screen and (max-width: 1139px) {
+    max-width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+     margin-left: auto;
+    margin-right: auto;
+         }
+ }
+
+ .sotial-title-1 {
+     padding-top: 12px;
+     margin-bottom: 20px;
+     font-family: "Roboto";
+     font-style: normal;
+     font-weight: bold;
+     font-size: 14px;
+     line-height: 16px;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+
+     color: $background-color;
+
+     margin-bottom: 20px;
+ }
+
+ .sotial-list {
+         @media screen and (max-width: 1139px) {
+     max-width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+         }
+ }
+
+ .contacts-1 .contacts-adress {
+     color: $text-color-white;
+     font-family: "Roboto";
+     font-weight: 400px;
+     font-size: 14px;
+     line-height: 1, 71;
+ }
+ .contacts-1 .contacts-connection {
+     color: $phone-color;
+     font-family: "Roboto";
+     font-weight: 400px;
+     font-size: 14px;
+     line-height: 1, 71;
+ }
+ .adress-1 {
+     margin-top: 20px;
+     margin-right: auto;
+ }
+ .adress-1 .item-1:not(:last-child) {
+     margin-bottom: 9px;
+ }
+ .social-footer-1 .social-1 {
+     display: inline-block;
+     height: 44px;
+     width: 44px;
+ }
+
+.social-footer-1 .social-1 {
+     margin-right: 10px;
+   
+}
+ .social-footer-1 .social-1:last-child {
+          margin-right: 0;
+ }
+ .footer-link {
+     display: flex;
+     background: rgba(255, 255, 255, 0.1);
+     width: 44px;
+     height: 44px;
+
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+
+     transition-property: color, background-color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .footer-sotial {
+     display: block;
+     width: 20px;
+     height: 20px;
+     fill: $background-color;
+ }
+ .footer-link:hover,
+ .footer-link:focus {
+     background-color: $accent-color;
+ }
+ .footer-link:hover .footer-sotial,
+ .footer-link:focus .footer-sotial {
+     fill: $background-color;
+ }
+ @media screen and (max-width: 1139px) {
+    
+    }
+ .mail-button {
+       @media screen and (max-width: 1139px) {
+    max-width: 100%;
+    
+    text-align: center;
+     margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+
+ .footer-field {
+     
+     height: 50px;
+     width: 100%;
+     margin: 0;
+     margin-right: 12px;
+     padding: 16px 15px;
+     background-color: $secondary-color-blue;
+     border: 1px solid $phone-color;
+     box-sizing: border-box;
+     border-radius: 4px;
+     @media screen and (min-width: 1140px){
+         width: 358px;
+     }
+ }
+
+ .footer-field textarea::placeholder {
+     font-family: "Roboto";
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 20px;
+
+     display: flex;
+     align-items: center;
+    letter-spacing: 0.03em;
+
+     color: $phone-color;
+ }
+
+ .footer-button {
+    
+     display: inline-flex;
+     align-items: center;
+     padding-top: 10px;
+     padding-right: 29px;
+   padding-bottom: 10px;
+     padding-left: 29px;
+     background: $accent-color;
+    border: 1px solid $accent-color;     border-radius: 4px;
+     color: $background-color;
+     font-family: "Roboto";
+     font-style: normal;
+     font-weight: bold;
+    font-size: 16px;
+     line-height: 30px;
+     letter-spacing: 0.06em;
+    text-decoration: none;
+    cursor: pointer;
+      @media screen and (max-width: 1139px) {
+       margin-top: 20px;
+      }
+ }
+
+
+ .footer-button::after {
+     content: '';
+     width: 24px;
+     height: 24px;
+     margin-left: 10px;
+     background-image: url(../img/icons/icon-send.svg);
+ }

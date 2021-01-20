@@ -1,0 +1,116 @@
+.site-advantage {
+   @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+   }
+}
+.site-advantage .item {
+    // padding: 15px;
+    // border-radius: 10px;
+    // text-align: center;
+    // font-size: 24px;
+ 
+    @media screen and (min-width: 768px) {
+         width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+     @media screen and (min-width: 1140px) {
+         width: calc((100% - 8 * 15px) / 4);
+        margin: 15px;
+    }    
+}
+ @media screen and (max-width: 767px) {
+     .site-advantage .item {
+      margin-bottom: 30px;
+  }
+ }
+//  .site-advantage {
+//      @media screen and (min-width: 768px) {
+//      display: flex;
+//      margin-left: wrap;
+//      box-sizing: inherit;
+//  }
+
+//    @media screen and (max-width: 768px) {
+//     .site-advantage .item {
+//      margin-bottom: 30px;
+//  }
+// }
+ 
+// .site-advantage .item {
+
+//       @media screen and (min-width: 768px) {
+        
+//         width: 50%;
+//     }
+//       @media screen and (min-width: 1140px) {
+ 
+//         width: 25%;
+//     }
+//  }
+ 
+//  /*.site-advantage .item {
+//      width: calc((100%-90px) / 4);
+//      margin-right: 30px;
+//  }
+//  .site-advantage .item:nth-child(4n) {
+//      margin-right: 0;
+//  }*/
+ .site-advantage .item::before {
+     display: block;
+     content: "";
+     height: 120px;
+     border-radius: 4px;
+     margin-bottom: 30px;
+ }
+
+ .site-advantage .item:nth-child(1)::before {
+     background-color: $secondary-color-grey;
+     background-image: url('../img/antenna.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ .site-advantage .item:nth-child(2)::before {
+     background-color: $secondary-color-grey;
+     background-image: url('../img/clock.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ .site-advantage .item:nth-child(3)::before {
+     background: $secondary-color-grey;
+     background-image: url('../img/diagram.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+
+ .site-advantage .item:nth-child(4)::before {
+     background: $secondary-color-grey;
+     background-image: url("../img/astronaut.svg");
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+.section-text {
+    font-family: "Roboto";
+    font-weight: 450px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: $text-color;
+    
+}
+
+  .section .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1,71px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
