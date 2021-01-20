@@ -132,10 +132,15 @@
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
-
+    @media screen and (max-width: 767px) {
+    flex-grow: 3;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+ }
 }
 .site-menu .item + .item {
    margin-left: 8px;
+   margin-bottom: 15px;
    
 }
 

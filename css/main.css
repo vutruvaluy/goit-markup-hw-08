@@ -979,9 +979,22 @@ summary {
           justify-content: center;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 767px) {
+  .site-menu {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .site-menu .item + .item {
   margin-left: 8px;
+  margin-bottom: 15px;
 }
 
 .passive-list {
@@ -1476,6 +1489,7 @@ summary {
 }
 
 .page-header {
+  position: relative;
   border: 1px solid #ECECEC;
 }
 @media screen and (max-width: 480px) {
@@ -1485,7 +1499,6 @@ summary {
 }
 
 .page-header .main-nav {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1495,11 +1508,11 @@ summary {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 60px;
+  height: 80px;
 }
 @media screen and (min-width: 768px) {
   .page-header .main-nav {
-    height: 80px;
+    width: auto;
   }
 }
 
@@ -1578,8 +1591,8 @@ summary {
 }
 
 .navigation .contacts {
-  height: 80px;
-  width: 453px;
+  min-height: 80px;
+  min-width: 453px;
   padding: 0;
 }
 

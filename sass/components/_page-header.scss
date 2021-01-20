@@ -13,21 +13,21 @@
 }
  
 .page-header {
-
+position: relative;
  border: 1px solid #ECECEC;
   @media screen and (max-width: 480px) {
     border: 1px solid #ECECEC;
   }  
 }
  .page-header .main-nav {
-   position: relative; 
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 80px;
 
  @media screen and (min-width: 768px)  {
-     height: 80px; 
+       width: auto; 
      }
  }
  /*mobile-heder*/
@@ -48,7 +48,6 @@
 
  .menu-button.is-open .icon-menu {
      display: block;
-    //  fill:  $accent-color;
      
  }
 
@@ -97,8 +96,8 @@
 
  .navigation .contacts {
    
-  height: 80px;
-  width: 453px;
+  min-height: 80px;
+  min-width:  453px;
   padding: 0;
  
 }
