@@ -73,16 +73,19 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -206,7 +209,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -294,9 +297,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -349,7 +352,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -387,7 +390,7 @@ summary {
 
 /* raleway-700 - latin_cyrillic */
 @font-face {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/raleway-v18-latin_cyrillic-700.eot");
@@ -395,9 +398,10 @@ summary {
   src: local(""), url("../fonts/raleway-v18-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v18-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/raleway-v18-latin_cyrillic-700.woff") format("woff"), url("../fonts/raleway-v18-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/raleway-v18-latin_cyrillic-700.svg#Raleway") format("svg");
   /* Legacy iOS */
 }
+
 /* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-v20-latin_cyrillic-regular.eot");
@@ -405,9 +409,10 @@ summary {
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
+
 /* roboto-500 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/roboto-v20-latin_cyrillic-500.eot");
@@ -415,9 +420,10 @@ summary {
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
+
 /* roboto-700 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/roboto-v20-latin_cyrillic-700.eot");
@@ -425,9 +431,10 @@ summary {
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
+
 /* roboto-900 - latin_cyrillic */
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/roboto-v20-latin_cyrillic-900.eot");
@@ -435,6 +442,7 @@ summary {
   src: local(""), url("../fonts/roboto-v20-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v20-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
+
 .clients {
   padding-top: 94px;
 }
@@ -462,6 +470,7 @@ summary {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (max-width: 767px) {
   .client-list-item {
     width: calc((100% - 30px) / 2);
@@ -473,18 +482,20 @@ summary {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1139px) {
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .client-list-item {
     width: calc((100% - 60px) / 3);
   }
   .client-list-item:nth-child(3n) {
     margin-right: 0px;
   }
-  .client-list-item:nth-last-child(-n+3) {
+  .client-list-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1140px) {
+
+@media screen and (min-width: 1200px) {
   .client-list-item {
     width: calc((100% - 150px) / 6);
   }
@@ -557,6 +568,7 @@ summary {
             justify-content: space-between;
   }
 }
+
 @media screen and (min-width: 1140px) {
   .main-contacts-1 {
     -webkit-box-align: start;
@@ -588,6 +600,7 @@ summary {
   line-height: 1, 71;
   background-color: #2F303A;
 }
+
 @media screen and (max-width: 1139px) {
   .contacts-1 {
     display: block;
@@ -731,6 +744,7 @@ summary {
           box-sizing: border-box;
   border-radius: 4px;
 }
+
 @media screen and (min-width: 1140px) {
   .footer-field {
     width: 358px;
@@ -747,18 +761,6 @@ summary {
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-field textarea::-moz-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -831,6 +833,7 @@ summary {
   text-decoration: none;
   cursor: pointer;
 }
+
 @media screen and (max-width: 1139px) {
   .footer-button {
     margin-top: 20px;
@@ -838,7 +841,7 @@ summary {
 }
 
 .footer-button::after {
-  content: "";
+  content: '';
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -873,6 +876,7 @@ summary {
     margin: 15px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .project-list .item {
     width: calc((100% - 6 * 15px) / 3);
@@ -885,6 +889,7 @@ summary {
     margin-bottom: 30px;
   }
 }
+
 .project-list a {
   display: block;
   min-width: 100%;
@@ -898,6 +903,7 @@ summary {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (min-width: 768px) {
   .project-list a {
     width: 50%;
@@ -995,6 +1001,7 @@ summary {
           justify-content: center;
   padding-bottom: 50px;
 }
+
 @media screen and (max-width: 767px) {
   .site-menu {
     -webkit-box-flex: 3;
@@ -1064,38 +1071,40 @@ summary {
 }
 
 .hero {
+  max-width: 1600px;
   background-color: #757575;
   text-align: center;
-  padding-top: 200px;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid black;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/header-img480.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/header-img480.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  outline: 1px solid black;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/header-img480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/header-img480.jpg");
 }
+
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/header-img480@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/header-img480@2x.jpg");
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/img_heder768.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/img_heder768.jpg");
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/img_heder768@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/img_heder768@2x.jpg");
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
@@ -1105,6 +1114,7 @@ summary {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/img_heder1600.jpg");
   }
 }
+
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/img_heder1600@2x.jpg");
@@ -1114,20 +1124,23 @@ summary {
 
 .hero .title {
   margin-top: 0;
-  padding-bottom: 30px;
-  color: #FFFFFF;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1, 62;
+  line-height: 42px;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #FFFFFF;
 }
+
 @media screen and (min-width: 1200px) {
   .hero .title {
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 
@@ -1137,6 +1150,7 @@ summary {
   padding: 10px 32px;
   min-width: 200px;
   min-height: 50px;
+  margin-top: 30px;
   color: #FFFFFF;
   background-color: #2196F3;
   border: #2196F3;
@@ -1156,6 +1170,7 @@ summary {
   width: 390;
   text-align: center;
 }
+
 @media screen and (min-width: 1140px) {
   .hero-overlay {
     width: 696px;
@@ -1169,9 +1184,9 @@ summary {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  overflow-y: scroll;
   opacity: 1;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1195,6 +1210,8 @@ summary {
   min-width: 450px;
   padding: 0;
   background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -1203,16 +1220,15 @@ summary {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (max-width: 479px) {
   .modal {
     width: 350px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     min-height: 609px;
     min-width: 450px;
     padding: 0;
@@ -1222,11 +1238,9 @@ summary {
     width: 100%;
   }
 }
-@media screen and (min-width: 1140px) {
+
+@media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     min-height: 581px;
     min-width: 528px;
     padding: 0;
@@ -1273,13 +1287,27 @@ summary {
 }
 
 .text-decor {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .text-decor {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .icon {
@@ -1309,12 +1337,6 @@ summary {
   color: #188ce8;
 }
 
-/*.no-padding {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: var(--secondary-color-grey);
-
-}*/
 .section.no-padding {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1331,7 +1353,7 @@ summary {
 }
 
 .section h2 {
-  padding-bottom: 50px;
+  margin-bottom: 30px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700px;
@@ -1339,6 +1361,12 @@ summary {
   line-height: 1, 5;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .section h2 {
+    margin-bottom: 50px;
+  }
 }
 
 .command-selection .section-text {
@@ -1369,24 +1397,27 @@ summary {
 .command-selection .item {
   text-align: center;
 }
+
 @media screen and (min-width: 768px) {
   .command-selection .item {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
-@media screen and (min-width: 1140px) {
+
+@media screen and (min-width: 1200px) {
   .command-selection .item {
     width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .command-selection .item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
+
 .site-filter .section-text {
   font-family: "Roboto";
   font-style: normal;
@@ -1402,7 +1433,7 @@ summary {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 71px;
+  line-height: 1,71px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -1417,7 +1448,13 @@ summary {
 .social-card {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  padding: 30px 32px;
+  padding: 30px 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-card {
+    padding-bottom: 30px;
+  }
 }
 
 .social-network {
@@ -1481,7 +1518,7 @@ summary {
   fill: #FFFFFF;
 }
 
-@media screen and (max-width: 1139px) {
+@media screen and (max-width: 1209px) {
   .padding {
     display: none;
   }
@@ -1557,11 +1594,13 @@ summary {
   z-index: 10;
   border-bottom: 1px solid #ececec;
 }
+
 @media screen and (max-width: 479px) {
   .main-nav {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 767px) {
   .main-nav {
     position: fixed;
@@ -1571,12 +1610,14 @@ summary {
             transform: translateX(-50%);
   }
 }
+
 @media screen and (min-width: 768px) {
   .main-nav {
     padding-top: 20px;
     padding-bottom: 21px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .main-nav {
     padding-top: 25px;
@@ -1591,6 +1632,7 @@ summary {
   font-size: 24px;
   line-height: 1.16;
 }
+
 @media screen and (min-width: 1200px) {
   .logo {
     font-family: "Raleway";
@@ -1615,21 +1657,26 @@ summary {
   border: none;
   background-color: transparent;
 }
+
 .menu-button .icon-close {
   display: none;
 }
+
 .menu-button.is-open .icon-close {
   display: block;
 }
+
 .menu-button.is-open .icon-menu {
   display: none;
 }
+
 .menu-button:hover, .menu-button:focus {
   color: #2196F3;
   --color4: $accent-color;
   fill: #2196F3;
   cursor: pointer;
 }
+
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
@@ -1642,6 +1689,7 @@ summary {
   font-size: 20px;
   z-index: 10;
 }
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -1658,6 +1706,7 @@ summary {
     display: block;
   }
 }
+
 @media screen and (min-width: 768px) {
   .menu-container {
     display: -webkit-box;
@@ -1680,6 +1729,7 @@ summary {
       -ms-flex-align: center;
           align-items: center;
 }
+
 @media screen and (max-width: 767px) {
   .site-nav {
     -webkit-box-orient: vertical;
@@ -1688,12 +1738,14 @@ summary {
             flex-direction: column;
   }
 }
+
 @media screen and (min-width: 768px) {
   .site-nav {
     margin-left: 88px;
     margin-right: 84px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-nav {
     margin-left: 93px;
@@ -1704,6 +1756,7 @@ summary {
 .site-nav .item {
   margin-right: 0px;
 }
+
 @media screen and (max-width: 767px) {
   .site-nav .item {
     margin-bottom: 40px;
@@ -1712,6 +1765,7 @@ summary {
     margin-bottom: 60px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .site-nav .item {
     margin-right: 50px;
@@ -1738,11 +1792,13 @@ summary {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (max-width: 767px) {
   .site-nav .link-nav {
     padding-bottom: 8px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .site-nav .link-nav {
     padding-top: 32px;
@@ -1754,6 +1810,7 @@ summary {
     line-height: 16px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-nav .link-nav {
     font-family: "Roboto";
@@ -1763,14 +1820,16 @@ summary {
     line-height: 16px;
   }
 }
+
 .site-nav .link-nav:hover, .site-nav .link-nav:focus {
   color: #2196F3;
 }
 
-.selected-page {
+.link-nav .current {
   color: #2196F3;
 }
-.selected-page::after {
+
+.link-nav .current::after {
   display: block;
   content: " ";
   position: absolute;
@@ -1800,6 +1859,7 @@ summary {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
+
 @media screen and (min-width: 768px) {
   .contacts-nav {
     -webkit-box-align: baseline;
@@ -1807,6 +1867,7 @@ summary {
             align-items: baseline;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .contacts-nav {
     -webkit-box-orient: horizontal;
@@ -1819,20 +1880,23 @@ summary {
 .contacts-nav .item {
   margin-bottom: 10px;
 }
-.contacts-nav .item:nth-last-child(-n+1) {
+
+.contacts-nav .item:nth-last-child(-n + 1) {
   margin-bottom: 0;
 }
+
 @media screen and (max-width: 767px) {
   .contacts-nav .item {
     margin-bottom: 16px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .contacts-nav .item {
     margin-right: 30px;
     margin-bottom: 0;
   }
-  .contacts-nav .item:nth-last-child(-n+1) {
+  .contacts-nav .item:nth-last-child(-n + 1) {
     margin-right: 0;
   }
 }
@@ -1857,18 +1921,21 @@ summary {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (min-width: 768px) {
   .contacts-nav .link {
     font-size: 12px;
     line-height: 1.16;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .contacts-nav .link {
     font-size: 14px;
     line-height: 1.14;
   }
 }
+
 .contacts-nav .link:hover, .contacts-nav .link:focus {
   color: #2196F3;
   --color4: $accent-color;
@@ -1897,6 +1964,7 @@ summary {
     margin: 15px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .site-advantage .item {
     width: calc((100% - 8 * 15px) / 4);
@@ -1909,6 +1977,7 @@ summary {
     margin-bottom: 30px;
   }
 }
+
 .site-advantage .item::before {
   display: block;
   content: "";
@@ -1961,10 +2030,11 @@ summary {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 71px;
+  line-height: 1,71px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 @media screen and (max-width: 767px) {
   .section .title {
     text-align: center;
@@ -1982,6 +2052,7 @@ textarea {
   margin-right: auto;
   padding: 40px;
 }
+
 @media screen and (min-width: 768px) {
   .form {
     min-width: 450px;
@@ -1991,6 +2062,7 @@ textarea {
     padding: 40px;
   }
 }
+
 @media screen and (min-width: 1140px) {
   .form {
     min-width: 528px;
@@ -2065,20 +2137,6 @@ textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field textarea::-moz-placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  -moz-transition-property: color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .form-field textarea:-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -2087,7 +2145,7 @@ textarea {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  -ms-transition-property: color;
+  -webkit-transition-property: color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2101,7 +2159,7 @@ textarea {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  -ms-transition-property: color;
+  -webkit-transition-property: color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2169,6 +2227,13 @@ textarea {
 }
 
 .form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   padding: 10px 56px;
   background: #2196F3;
   border: 1px solid #2196F3;
@@ -2196,4 +2261,5 @@ textarea {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

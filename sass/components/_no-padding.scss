@@ -1,9 +1,4 @@
-/*.no-padding {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: var(--secondary-color-grey);
-   
-}*/
+
 .section.no-padding {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -20,7 +15,7 @@
      color: $text-color;
  }
  .section h2 {
-    padding-bottom: 50px;
+    margin-bottom: 30px;
 
     font-family: "Roboto";
     font-style: normal;
@@ -29,6 +24,9 @@
     line-height: 1, 5;
     text-align: center;
     letter-spacing: 0.03em;
+     @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
 }
 .command-selection .section-text {
     margin-bottom: 16px;
@@ -40,10 +38,8 @@
 }
 
 .command-selection {
-
     margin-left: 0;
     margin-right: 10;
-
 }
 .command-selection {
       @media screen and (min-width: 768px) {
@@ -62,26 +58,17 @@
       margin: 15px;
     
  }
- @media screen and (min-width: 1140px) {
+ @media screen and (min-width: 1200px) {
       width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
  }
 }
  
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
           .command-selection .item:not(:last-child) {
           margin-bottom: 30px;
       }
  }
-
-
-// .command-selection .item {
-//     width: calc((100%-90px) / 4);
-//     margin-right: 30px;
-//     }
-// .command-selection .item:nth-child(4n) {
-//   margin-right: 0;
-// }
 
 .site-filter .section-text {
     
@@ -114,7 +101,11 @@
 .social-card {
    
     box-sizing: inherit;
-    padding: 30px 32px;
+    padding: 30px 24px;
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    }
 }
 
 .social-network {

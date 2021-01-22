@@ -120,22 +120,8 @@
                         <button class="form-button" type="submit">Отправить</button>
                         <button data-close-modal class="button">&#10005</button>
                     </form>
-                    <!-- <button data-close-modal class="button">&#10005</button> -->
                 </div>
             </div>
-            <script>
-                (() => {
-                    document
-                      .querySelector('.js-speaker-form')
-                      .addEventListener('submit', e =>{
-                          e.preventDefault();
-
-                          new FormData(e.currentTarget).forEach((value, name) =>
-                            console.log(`${name}: ${value}`),
-                          );
-                        });
-                })();
-            </script>
         </section>
         <section class="container section">
             <ul class=" site-advantage">
@@ -164,15 +150,45 @@
                 <h2>Чем мы занимаемся</h2>
                 <ul class="site-works">
                     <li class="item ">
-                        <img src="img/desktop.jpg" width="370" height="294" alt="img1">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            type="image/webp" 
+                            srcset="./img/desktop/img.desktop.webp 1x,
+                                    ./img/desktop/img.desktop@2x.webp 2x,">
+                            <img alt="Картинка 1" width="370" height="294" 
+                            srcset="./img/desktop/img.desktop.jpg 1x,
+                                    ./img/desktop/img.desktop@2x.jpg 2x," 
+                            src="./img/desktop/img.desktop.jpg">
+                        </picture>
                         <p class="box">Десктопные приложения</p>
                     </li>
                     <li class="item ">
-                        <img src="img/mobile.jpg" width="370" height="294" alt="img2">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            type="image/webp" 
+                            srcset="./img/mob/img.mob.webp 1x,
+                                    ./img/mob/img.mob@2x.webp 2x,">
+                            <img alt="Картинка 1" width="370" height="294" 
+                            srcset="./img/mob/img.mob.jpg 1x,
+                                    ./img/mob/img.mob@2x.jpg 2x," 
+                            src="./img/mob/img.mob.jpg">
+                        </picture>
                         <p class="box">Мобильные приложения</p>
                     </li>
                     <li class="item ">
-                        <img src="img/designe.jpg" width="370" height="294" alt="img3">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            type="image/webp" 
+                            srcset="./img/desine/img.desine.webp 1x,
+                                    ./img/desine/img.desine@2x.webp 2x,">
+                            <img alt="Картинка 1" width="370" height="294" 
+                            srcset="./img/desine/img.desine.jpg 1x,
+                                    ./img/desine/img.desine@2x.jpg 2x," 
+                            src="./img/desine/img.desine.jpg">
+                        </picture>
                         <p class="box" >Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -190,21 +206,29 @@
                                 media="(min-width: 1200px)" 
                                 type="image/vebp" 
                                 srcset="./img/demianenko/img.demianenko_270.webp 1x,
-                                        ./img/demianenko/img.demianenko_270@2x.webp 2x">
-                                <source media="(min-width: 768px)" type="image/vebp" srcset="./img/demianenko/img.demianenko_354.webp 1x,
-                                                                            ./img/demianenko/img.demianenko_354@2x.webp 2x">
-                            
-                                <source media="(min-width: 480px)" type="image/vebp" srcset="./img/demianenko/img.demianenko_450.webp 1x,
-                                                                            ./img/demianenko/img.demianenko_450@2x.webp 2x">
-                            
-                                <source media="(min-width:1200px)" srcset="./img/demianenko/img.demianenko_370.jpg 1x, 
-                                                                                                                                                                                                            
-                                                                            ./img/demianenko/img.demianenko_370@2x.jpg 2x,">
-                                <source media="(min-width: 768px)" srcset="./img/demianenko/img.demianenko_354.jpg 1x, 
-                                                                            ./img/demianenko/img.demianenko_354@2x.jpg 2x,">
-                                <img alt="Игорь Демьяненко" srcset="./img/demianenko/img.demianenko_450.jpg 1x, 
-                                                                            ./img/demianenko/img.demianenko_450@2x.jpg 2x,"
-                                    src="./img/demianenko/img.demianenko_450.jpg">
+                                        ./img/demianenko/img.demianenko_270@2x.webp 2x,">
+                                <source 
+                                media="(min-width: 768px)" 
+                                type="image/vebp" 
+                                srcset="./img/demianenko/img.demianenko_354.webp 1x,
+                                        ./img/demianenko/img.demianenko_354@2x.webp 2x,">
+                                <source
+                                 media="(min-width: 480px)" 
+                                 type="image/vebp" 
+                                 srcset="./img/demianenko/img.demianenko_450.webp 1x,
+                                        ./img/demianenko/img.demianenko_450@2x.webp 2x,">
+                                <source 
+                                media="(min-width: 1200px)" 
+                                srcset="./img/demianenko/img.demianenko_270.jpg 1x, 
+                                        ./img/demianenko/img.demianenko_270@2x.jpg 2x,">
+                                <source 
+                                media="(min-width: 768px)" 
+                                srcset="./img/demianenko/img.demianenko_354.jpg 1x, 
+                                        ./img/demianenko/img.demianenko_354@2x.jpg 2x,">
+                                <img alt="Игорь Демьяненко" width="270" height="260"
+                                srcset="./img/demianenko/img.demianenko_450.jpg 1x, 
+                                        ./img/demianenko/img.demianenko_450@2x.jpg 2x,"
+                                src="./img/demianenko/img.demianenko_450.jpg">
                             
                             </picture>
                             <div class="social-card">
@@ -242,27 +266,30 @@
                     <li class="item">
                         <div class="card-comand">
                             <picture>
-                                <source media="(min-width: 1200px)" type="image/vebp"
-                                    srcset="./img/repina/img.repina_270.webp 1x,
-                                            ./img/repina/img.repina_270@2x.webp 2x">
-                                <source media="(min-width: 768px)" type="image/vebp"
-                                    srcset="./img/repina/img.repina_354.webp 1x,
-                                            ./img/repina/img.repina_354@2x.webp 2x">
-                            
-                                <source media="(min-width: 480px)" type="image/vebp"
-                                    srcset="./img/repina/img.repina_450.webp 1x,
-                                            ./img/repina/img.repina_450@2x.webp 2x">
-                            
-                                <source media="(min-width:1200px)"
-                                    srcset="./img/repina/img.repina_370.jpg 1x, 
-                                            ./img/repina/img.repina_370@2x.jpg 2x,">
-                                <source media="(min-width: 768px)"
-                                    srcset="./img/repina/img.repina_354.jpg 1x, 
-                                            ./img/repina/img.repina_354@2x.jpg 2x,">
+                                <source 
+                                media="(min-width: 1200px)" type="image/vebp"
+                                srcset="./img/repina/img.repina_270.webp 1x,
+                                        ./img/repina/img.repina_270@2x.webp 2x,">
+                                <source 
+                                media="(min-width: 768px)" type="image/vebp"
+                                srcset="./img/repina/img.repina_354.webp 1x,
+                                        ./img/repina/img.repina_354@2x.webp 2x,">
+                                <source 
+                                media="(min-width: 480px)" type="image/vebp"
+                                srcset="./img/repina/img.repina_450.webp 1x,
+                                        ./img/repina/img.repina_450@2x.webp 2x,">
+                                <source 
+                                media="(min-width:1200px)"
+                                srcset="./img/repina/img.repina_270.jpg 1x, 
+                                        ./img/repina/img.repina_270@2x.jpg 2x,">
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./img/repina/img.repina_354.jpg 1x, 
+                                        ./img/repina/img.repina_354@2x.jpg 2x,">
                                 <img alt="Ольга Репина"
-                                    srcset="./img/repina/img.repina_450.jpg 1x, 
-                                            ./img/repina/img.repina_450@2x.jpg 2x,"
-                                    src="./img/repina/img.repina_450.jpg">
+                                srcset="./img/repina/img.repina_450.jpg 1x, 
+                                        ./img/repina/img.repina_450@2x.jpg 2x,"
+                                src="./img/repina/img.repina_450.jpg">
                             
                             </picture>
                             <div class="social-card">
@@ -302,28 +329,30 @@
                     <li class="item">
                         <div class="card-comand">
                             <picture>
-                                <source media="(min-width: 1200px)" type="image/vebp"
-                                    srcset="./img/tarasov/img.tarasov_270.webp 1x,
-                                            ./img/tarasov/img.tarasov_270@2x.webp 2x">
-                                <source media="(min-width: 768px)" type="image/vebp"
-                                    srcset="./img/tarasov/img.tarasov_354.webp 1x,
-                                            ./img/tarasov/img.tarasov_354@2x.webp 2x">
-                            
-                                <source media="(min-width: 480px)" type="image/vebp"
-                                    srcset="./img/tarasov/img.tarasov_450.webp 1x,
-                                            ./img/tarasov/img.tarasov_450@2x.webp 2x">
-                            
-                                <source media="(min-width:1200px)"
-                                    srcset="./img/tarasov/img.tarasov_370.jpg 1x, 
-                                                                                                                                                                                                                                        
-                                            ./img/tarasov/img.tarasov_370@2x.jpg 2x,">
-                                <source media="(min-width: 768px)"
-                                    srcset="./img/tarasov/img.tarasov_354.jpg 1x, 
-                                            ./img/tarasov/img.tarasov_354@2x.jpg 2x,">
+                                <source 
+                                media="(min-width: 1200px)" type="image/vebp"
+                                srcset="./img/tarasov/img.tarasov_270.webp 1x,
+                                        ./img/tarasov/img.tarasov_270@2x.webp 2x,">
+                                <source 
+                                media="(min-width: 768px)" type="image/vebp"
+                                srcset="./img/tarasov/img.tarasov_354.webp 1x,
+                                        ./img/tarasov/img.tarasov_354@2x.webp 2x,">
+                                <source 
+                                media="(min-width: 480px)" type="image/vebp"
+                                srcset="./img/tarasov/img.tarasov_450.webp 1x,
+                                        ./img/tarasov/img.tarasov_450@2x.webp 2x,">
+                                <source 
+                                media="(min-width:1200px)"
+                                srcset="./img/tarasov/img.tarasov_270.jpg 1x, 
+                                        ./img/tarasov/img.tarasov_270@2x.jpg 2x,">
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./img/tarasov/img.tarasov_354.jpg 1x, 
+                                        ./img/tarasov/img.tarasov_354@2x.jpg 2x,">
                                 <img alt="Николай Тарасов"
-                                    srcset="./img/tarasov/img.tarasov_450.jpg 1x, 
-                                            ./img/tarasov/img.tarasov_450@2x.jpg 2x,"
-                                    src="./img/tarasov/img.tarasov_450.jpg">
+                                srcset="./img/tarasov/img.tarasov_450.jpg 1x, 
+                                        ./img/tarasov/img.tarasov_450@2x.jpg 2x,"
+                                src="./img/tarasov/img.tarasov_450.jpg">
                             
                             </picture>
                             <div class="social-card">
@@ -363,26 +392,28 @@
                             <picture>
                                 <source media="(min-width: 1200px)" type="image/vebp"
                                     srcset="./img/ermakov/img.ermakov_270.webp 1x,
-                                             ./img/ermakov/img.ermakov_270@2x.webp 2x">
-                                <source media="(min-width: 768px)" type="image/vebp"
-                                    srcset="./img/ermakov/img.ermakov_354.webp 1x,
-                                            ./img/ermakov/img.ermakov_354@2x.webp 2x">
-                            
-                                <source media="(min-width: 480px)" type="image/vebp"
-                                    srcset="./img/ermakov/img.ermakov_450.webp 1x,
-                                            ./img/ermakov/img.ermakov_450@2x.webp 2x">
-                            
-                                <source media="(min-width:1200px)"
-                                    srcset="./img/ermakov/img.ermakov_370.jpg 1x, 
-                                                                                                                                                                                                                                        
-                                            ./img/ermakov/img.ermakov_370@2x.jpg 2x,">
-                                <source media="(min-width: 768px)"
-                                    srcset="./img/ermakov/img.ermakov_354.jpg 1x, 
-                                            ./img/ermakov/img.ermakov_354@2x.jpg 2x,">
+                                             ./img/ermakov/img.ermakov_270@2x.webp 2x,">
+                                <source 
+                                media="(min-width: 768px)" type="image/vebp"
+                                srcset="./img/ermakov/img.ermakov_354.webp 1x,
+                                        ./img/ermakov/img.ermakov_354@2x.webp 2x,">
+                                <source 
+                                media="(min-width: 480px)"
+                                type="image/vebp"
+                                srcset="./img/ermakov/img.ermakov_450.webp 1x,
+                                        ./img/ermakov/img.ermakov_450@2x.webp 2x,">
+                                <source 
+                                media="(min-width:1200px)"
+                                srcset="./img/ermakov/img.ermakov_270.jpg 1x, 
+                                        ./img/ermakov/img.ermakov_270@2x.jpg 2x,">
+                                <source 
+                                media="(min-width: 768px)"
+                                srcset="./img/ermakov/img.ermakov_354.jpg 1x, 
+                                        ./img/ermakov/img.ermakov_354@2x.jpg 2x,">
                                 <img alt="Михаил Ермаков"
-                                    srcset="./img/ermakov/img.ermakov_450.jpg 1x, 
-                                            ./img/ermakov/img.ermakov_450@2x.jpg 2x,"
-                                    src="./img/ermakov/img.ermakov_450.jpg">
+                                srcset="./img/ermakov/img.ermakov_450.jpg 1x, 
+                                        ./img/ermakov/img.ermakov_450@2x.jpg 2x,"
+                                src="./img/ermakov/img.ermakov_450.jpg">
                             
                             </picture>
                             <div class="social-card">
@@ -527,5 +558,6 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/smth-more.js "></script>
 </body> 
 </html>
