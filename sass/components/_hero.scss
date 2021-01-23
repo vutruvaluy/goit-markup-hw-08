@@ -15,53 +15,53 @@
     url("../img/hero/mobile.jpg");
     
     @media screen and (min-device-pixel-ratio: 2),
-           screen and (-o-min-device-pixel-ratio: 2/1),
-           screen and (-webkit-min-device-pixel-ratio: 2),
-           screen and (min-resolution: 192dpi),
-           screen and (min-resolution: 2dppx) {
-           background-image: linear-gradient(
-           to right, rgba(47, 48, 58, 0.4),
-                     rgba(47, 48, 58, 0.4)),
-            url("../img/hero/mobile@2x.jpg");
-            }
-     @media screen and (min-width: 768px) and (max-width: 1199px) {
-            background-image: linear-gradient(
-                to right, rgba(47, 48, 58, 0.4),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+        to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-              url("../img/hero/tablet.jpg");
-            
-            @media screen and (min-device-pixel-ratio: 2),
-              screen and (-o-min-device-pixel-ratio: 2/1),
-              screen and (-webkit-min-device-pixel-ratio: 2),
-              screen and (min-resolution: 192dpi),
-              screen and (min-resolution: 2dppx) {
-                background-image: linear-gradient(
-                    to right, rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                  url("../img/hero/tablet@2x.jpg");
-            }
+        url("../img/hero/mobile@2x.jpg");
         }
-         @media screen and (min-width: 1200px) {
-          padding-top: 200px;
-          padding-bottom: 200px;
-          max-width: 100%;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: linear-gradient(
+        to right, rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../img/hero/tablet.jpg");
+            
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+        to right, rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../img/hero/tablet@2x.jpg");
+        }
+    }
+    @media screen and (min-width: 1200px) {  
+        padding-top: 200px;
+        padding-bottom: 200px;
+        max-width: 100%;
 
-          background-image: linear-gradient(
-              to right, rgba(47, 48, 58, 0.4),
-              rgba(47, 48, 58, 0.4)),
+        background-image: linear-gradient(
+        to right, rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
             url("../img/hero/desktop.jpg");
         
-            @media screen and (min-device-pixel-ratio: 2),
-              screen and (-o-min-device-pixel-ratio: 2/1),
-              screen and (-webkit-min-device-pixel-ratio: 2),
-              screen and (min-resolution: 192dpi),
-              screen and (min-resolution: 2dppx) {
-                background-image: linear-gradient(
-                    to right, rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                  url("../img/hero/desktop@2x.jpg");
-            }
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+        to right, rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)),
+        url("../img/hero/desktop@2x.jpg");
         }
+    }
 }
 
 .hero .title {
@@ -78,10 +78,10 @@ text-transform: uppercase;
 color: $background-color;
    
     @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.36;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     }
 }
 
@@ -110,10 +110,10 @@ color: $background-color;
 .hero-overlay {
     width: 390;
     text-align: center;
-     @media screen and (min-width: 1140px) {
-        width: 696px;
-         text-align: center;
-     }
+    @media screen and (min-width: 1140px) {
+    width: 696px;
+    text-align: center;
+    }
 }
 .backdrop {
     position: fixed;
@@ -147,7 +147,7 @@ color: $background-color;
 
     background-color: $background-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
     transform: translate(-50%, -50%) scale(1);
@@ -156,9 +156,7 @@ color: $background-color;
     @media screen and (max-width: 479px){
       width: 350px;;
     }
-    
-     @media screen and (min-width: 768px) {
-
+    @media screen and (min-width: 768px) {
         min-height: 609px;
         min-width: 450px;
         padding: 0;
@@ -167,7 +165,6 @@ color: $background-color;
         width: 100%;
     }
      @media screen and (min-width: 1200px) {
-
         min-height: 581px;
         min-width: 528px;
         padding: 0;
@@ -175,11 +172,7 @@ color: $background-color;
         max-width: 528px;
         width: 100%;
     }
-     
 }
-
-
-
 .button {
     position: absolute;
     right: 8px;
@@ -203,16 +196,13 @@ color: $background-color;
 
     position: absolute;
 }
-
 .label {
     display: flex;
     align-items: center;
 }
-
 .lable-list {
     margin-bottom: 30px;
 }
-
 .text-decor {
     align-self: center;
 
@@ -223,18 +213,15 @@ color: $background-color;
     line-height: 1.16;
     letter-spacing: 0.03em;
     @media screen and (min-width: 1200px){
-     
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    
     }
     color: #757575;
 }
-
 .icon {
     display: inline-block;
     width: 15px;

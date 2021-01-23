@@ -12,7 +12,7 @@
     line-height: 24px;
     letter-spacing: 0.03em;
 
-     color: $text-color;
+    color: $text-color;
  }
  .section h2 {
     margin-bottom: 30px;
@@ -24,8 +24,8 @@
     line-height: 1, 5;
     text-align: center;
     letter-spacing: 0.03em;
-     @media screen and (min-width: 1200px) {
-      margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     }
 }
 .command-selection .section-text {
@@ -42,10 +42,10 @@
     margin-right: 10;
 }
 .command-selection {
-      @media screen and (min-width: 768px) {
-     display: flex;
-     flex-wrap: wrap;
-      margin: -15px;
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
     }
 }   
 
@@ -53,25 +53,20 @@
    
     text-align: center;
     @media screen and (min-width: 768px) {
-    
-      width: calc((100% - 4 * 15px) / 2);
-      margin: 15px;
-    
- }
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    }
  @media screen and (min-width: 1200px) {
-      width: calc((100% - 8 * 15px) / 4);
-      margin: 15px;
- }
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    }
 }
- 
-      @media screen and (max-width: 767px) {
-          .command-selection .item:not(:last-child) {
-          margin-bottom: 30px;
-      }
- }
-
+@media screen and (max-width: 767px) {
+.command-selection .item:not(:last-child) {
+    margin-bottom: 30px;
+    }
+}
 .site-filter .section-text {
-    
     font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
@@ -104,7 +99,7 @@
     padding: 30px 24px;
 
     @media screen and (min-width: 1200px) {
-      padding-bottom: 30px;
+    padding-bottom: 30px;
     }
 }
 

@@ -1,13 +1,28 @@
-  .padding {
-    @media screen and (max-width: 1209px) {
+.padding {
+    @media screen and (max-width: 1200px) {
     display: none;
     }
 }
- .section .padding {
-    padding-top: 94px;
+.padding {
+    padding-top: 0px;
     padding-bottom: 94px;
-    background-color: $background-color; 
+    background-color: #FFFFFF;
 }
+.padding h2 {
+    margin-bottom: 30px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 1, 5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    }
+}
+    
 .site-works {
     display: flex;
     margin-left: wrap;
