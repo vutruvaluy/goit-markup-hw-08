@@ -963,6 +963,11 @@ summary {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-contant {
+    height: 146px;
+  }
+}
 
 .heading {
   margin: 0;
